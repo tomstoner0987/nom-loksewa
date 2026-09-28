@@ -1,4 +1,5 @@
 FROM nginx:alpine
 COPY . /usr/share/nginx/html
 EXPOSE 8080
-CMD ["sh","-c","PORT=${PORT:-8080}; sed -i 's/listen       80;/listen       $PORT;/; s/listen  \\[::\\]:80;/listen  [::]:$PORT;/' /etc/nginx/conf.d/default.conf; nginx -g 'daemon off;'"]
+RUN sed -i 's/listen       80;/listen       8080;/' /etc/nginx/conf.d/default.conf
+CMD ["nginx","-g","daemon off;"]
