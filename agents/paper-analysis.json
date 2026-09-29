@@ -1,0 +1,63 @@
+{
+  "documents": [
+    {
+      "id": "paper-1",
+      "file": "1st paper",
+      "pages": 9,
+      "exam": {
+        "stage_1_preliminary_marks": 100,
+        "stage_1_pass_marks": 45,
+        "preliminary_questions": 50,
+        "preliminary_marks_per_question": 2,
+        "preliminary_time_minutes": 45,
+        "stage_2_main_total_marks": 200,
+        "paper_2_marks": 100,
+        "paper_3_marks": 100,
+        "final_stage_total_marks": 40,
+        "computer_skill_marks": 10,
+        "interview_marks": 30,
+        "negative_marking_wrong_mcq_percent": 20
+      },
+      "paper_1_topics": [
+        "General Knowledge: Solar System and Geography",
+        "General Knowledge: History",
+        "General Knowledge: Nepal social, economic conditions and governance",
+        "General Knowledge: Science, technology, public health and environment",
+        "General Knowledge: International relations and current affairs",
+        "Basic Office Skills"
+      ]
+    },
+    {
+      "id": "paper-2",
+      "file": "2nd paper",
+      "pages": 4,
+      "title": "Office Management",
+      "sections": [
+        {"id": "A", "marks": 40, "topics": ["Office and employees", "Office resources", "Office communication", "Office procedure", "Correspondence", "Registration and dispatch", "Information/notices, circulars and orders", "Note writing", "Report writing", "Record management", "Filing and indexing", "Meeting management and minute records", "Public relations and citizen complaint management"]},
+        {"id": "B", "marks": 30, "topics": ["Constitution and civic awareness", "Fundamental rights and duties", "Directive principles, policies and obligations of the state", "Constitutional bodies and their functions", "Civic conscience, human values, duties and discipline"]},
+        {"id": "C", "marks": 30, "topics": ["Fundamental mathematical operations and unitary method", "Fractions, decimals, percentages and ratios", "Profit, loss and discount", "Tax, commission and depreciation", "Simple and compound interest", "Average", "Household arithmetic", "Mensuration"]}
+      ],
+      "paper_3_topics_visible_in_source": [
+        "Public service management",
+        "Civil service formation, recruitment, appointment, transfer, promotion, leave, departmental action and retirement",
+        "Employee conduct and duties",
+        "Public service delivery",
+        "Public charter",
+        "Good governance",
+        "Right to Information",
+        "Corruption prevention",
+        "Federal, provincial and local coordination",
+        "Food rights and food sovereignty",
+        "Vital registration",
+        "National identity card",
+        "E-governance",
+        "Information and communication technology",
+        "Accounting and financial administration",
+        "Budget and LMBIS",
+        "Charts of Accounts, TSA, RMIS, CGAS and deposit accounting",
+        "Public procurement and inventory management"
+      ]
+    }
+  ],
+  "note": "This dataset records only what was extracted from the uploaded papers. It is not a substitute for the complete source documents."
+}
