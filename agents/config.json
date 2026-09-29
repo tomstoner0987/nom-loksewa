@@ -1,0 +1,17 @@
+{
+  "name": "Nom LokSewa Study Agent System",
+  "version": "1.0.0",
+  "source_policy": "source_first",
+  "agents": [
+    {"id": "source-auditor", "role": "audit", "input": ["uploaded_papers", "official_psc_documents"], "output": ["exam_scheme", "rules", "source_flags"]},
+    {"id": "syllabus-mapper", "role": "structure", "input": ["source-auditor.exam_scheme", "source-auditor.source_text"], "output": ["topic_tree", "study_checklist", "coverage_map"]},
+    {"id": "question-engine", "role": "assessment", "input": ["syllabus-mapper.topic_tree"], "output": ["mcq_bank", "subjective_bank", "explanations"]},
+    {"id": "exam-coach", "role": "personalization", "input": ["question-engine.mcq_bank", "user_attempts", "mistake_notebook"], "output": ["daily_set", "mock_exam", "revision_queue"]}
+  ],
+  "guardrails": {
+    "no_syllabus_invention": true,
+    "source_provenance_required": true,
+    "external_claims_require_verification": true,
+    "political_content_neutral": true
+  }
+}
